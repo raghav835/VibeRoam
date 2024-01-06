@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Your Preferred Font", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.navbar {
+  height: 50px;
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow for depth */
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.navButton {
+  margin-left: 20px;
+  border: none;
+  padding: 10px 20px; /* Increase padding for a larger clickable area */
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #003580;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s,
+    transform 0.3s;
+}
+
+.navButton:hover {
+  background-color: #003580;
+  color: #fff;
+  border-color: #003580;
+  transform: scale(1.05);
+}
+
+.navButton a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Add transitions for smoother effects */
+.navbar,
+.navContainer,
+.navButton {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s,
+    transform 0.3s, box-shadow 0.3s;
+}

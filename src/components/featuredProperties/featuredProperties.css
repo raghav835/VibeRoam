@@ -1,0 +1,97 @@
+/* Enhanced Featured Property Styling with Card Effect and Animation */
+
+.fp {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.fpItem {
+  flex: 1;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fpItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.fpItem:hover .fpImg,
+.fpItem:hover .fpContent {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fpImg,
+.fpContent {
+  opacity: 0;
+}
+
+.fpImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.fpContent {
+  padding: 15px;
+}
+
+.fpName {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.fpCity {
+  font-weight: 300;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.fpPrice {
+  font-weight: 500;
+  font-size: 16px;
+  color: #0071c2;
+}
+
+.fpRating {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.fpRating > button {
+  background-color: #003580;
+  color: white;
+  border: none;
+  padding: 3px;
+  margin-right: 5px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.fpRating > span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .fpItem {
+    flex-direction: column;
+  }
+}
